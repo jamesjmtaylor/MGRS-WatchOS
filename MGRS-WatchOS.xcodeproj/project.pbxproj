@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8FA2D34C241D267F00AE4299 /* MGRS-WatchOS WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8FA2D34B241D267F00AE4299 /* MGRS-WatchOS WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8FA2D352241D267F00AE4299 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA2D350241D267F00AE4299 /* Interface.storyboard */; };
+		8FA2D354241D267F00AE4299 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FA2D353241D267F00AE4299 /* Assets.xcassets */; };
+		8FA2D35B241D268000AE4299 /* MGRS-WatchOS WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8FA2D35A241D268000AE4299 /* MGRS-WatchOS WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8FA2D360241D268000AE4299 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA2D35F241D268000AE4299 /* ContentView.swift */; };
+		8FA2D362241D268000AE4299 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA2D361241D268000AE4299 /* HostingController.swift */; };
+		8FA2D364241D268000AE4299 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA2D363241D268000AE4299 /* ExtensionDelegate.swift */; };
+		8FA2D366241D268000AE4299 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA2D365241D268000AE4299 /* NotificationController.swift */; };
+		8FA2D368241D268000AE4299 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA2D367241D268000AE4299 /* NotificationView.swift */; };
+		8FA2D36A241D268000AE4299 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA2D369241D268000AE4299 /* ComplicationController.swift */; };
+		8FA2D36C241D268000AE4299 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FA2D36B241D268000AE4299 /* Assets.xcassets */; };
+		8FA2D36F241D268000AE4299 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FA2D36E241D268000AE4299 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FA2D34D241D267F00AE4299 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FA2D341241D267E00AE4299 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FA2D34A241D267F00AE4299;
+			remoteInfo = "MGRS-WatchOS WatchKit App";
+		};
+		8FA2D35C241D268000AE4299 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FA2D341241D267E00AE4299 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FA2D359241D268000AE4299;
+			remoteInfo = "MGRS-WatchOS WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8FA2D377241D268000AE4299 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8FA2D35B241D268000AE4299 /* MGRS-WatchOS WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FA2D37B241D268000AE4299 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8FA2D34C241D267F00AE4299 /* MGRS-WatchOS WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8FA2D347241D267E00AE4299 /* MGRS-WatchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MGRS-WatchOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FA2D34B241D267F00AE4299 /* MGRS-WatchOS WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MGRS-WatchOS WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FA2D351241D267F00AE4299 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8FA2D353241D267F00AE4299 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FA2D355241D267F00AE4299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FA2D35A241D268000AE4299 /* MGRS-WatchOS WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MGRS-WatchOS WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FA2D35F241D268000AE4299 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8FA2D361241D268000AE4299 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		8FA2D363241D268000AE4299 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8FA2D365241D268000AE4299 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8FA2D367241D268000AE4299 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		8FA2D369241D268000AE4299 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		8FA2D36B241D268000AE4299 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FA2D36E241D268000AE4299 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8FA2D370241D268000AE4299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FA2D371241D268000AE4299 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FA2D357241D268000AE4299 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FA2D340241D267E00AE4299 = {
+			isa = PBXGroup;
+			children = (
+				8FA2D34F241D267F00AE4299 /* MGRS-WatchOS WatchKit App */,
+				8FA2D35E241D268000AE4299 /* MGRS-WatchOS WatchKit Extension */,
+				8FA2D348241D267E00AE4299 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8FA2D348241D267E00AE4299 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FA2D347241D267E00AE4299 /* MGRS-WatchOS.app */,
+				8FA2D34B241D267F00AE4299 /* MGRS-WatchOS WatchKit App.app */,
+				8FA2D35A241D268000AE4299 /* MGRS-WatchOS WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FA2D34F241D267F00AE4299 /* MGRS-WatchOS WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				8FA2D350241D267F00AE4299 /* Interface.storyboard */,
+				8FA2D353241D267F00AE4299 /* Assets.xcassets */,
+				8FA2D355241D267F00AE4299 /* Info.plist */,
+			);
+			path = "MGRS-WatchOS WatchKit App";
+			sourceTree = "<group>";
+		};
+		8FA2D35E241D268000AE4299 /* MGRS-WatchOS WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8FA2D35F241D268000AE4299 /* ContentView.swift */,
+				8FA2D361241D268000AE4299 /* HostingController.swift */,
+				8FA2D363241D268000AE4299 /* ExtensionDelegate.swift */,
+				8FA2D365241D268000AE4299 /* NotificationController.swift */,
+				8FA2D367241D268000AE4299 /* NotificationView.swift */,
+				8FA2D369241D268000AE4299 /* ComplicationController.swift */,
+				8FA2D36B241D268000AE4299 /* Assets.xcassets */,
+				8FA2D370241D268000AE4299 /* Info.plist */,
+				8FA2D371241D268000AE4299 /* PushNotificationPayload.apns */,
+				8FA2D36D241D268000AE4299 /* Preview Content */,
+			);
+			path = "MGRS-WatchOS WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		8FA2D36D241D268000AE4299 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8FA2D36E241D268000AE4299 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FA2D346241D267E00AE4299 /* MGRS-WatchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FA2D37C241D268000AE4299 /* Build configuration list for PBXNativeTarget "MGRS-WatchOS" */;
+			buildPhases = (
+				8FA2D345241D267E00AE4299 /* Resources */,
+				8FA2D37B241D268000AE4299 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FA2D34E241D267F00AE4299 /* PBXTargetDependency */,
+			);
+			name = "MGRS-WatchOS";
+			productName = "MGRS-WatchOS";
+			productReference = 8FA2D347241D267E00AE4299 /* MGRS-WatchOS.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		8FA2D34A241D267F00AE4299 /* MGRS-WatchOS WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FA2D378241D268000AE4299 /* Build configuration list for PBXNativeTarget "MGRS-WatchOS WatchKit App" */;
+			buildPhases = (
+				8FA2D349241D267F00AE4299 /* Resources */,
+				8FA2D377241D268000AE4299 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FA2D35D241D268000AE4299 /* PBXTargetDependency */,
+			);
+			name = "MGRS-WatchOS WatchKit App";
+			productName = "MGRS-WatchOS WatchKit App";
+			productReference = 8FA2D34B241D267F00AE4299 /* MGRS-WatchOS WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8FA2D359241D268000AE4299 /* MGRS-WatchOS WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FA2D374241D268000AE4299 /* Build configuration list for PBXNativeTarget "MGRS-WatchOS WatchKit Extension" */;
+			buildPhases = (
+				8FA2D356241D268000AE4299 /* Sources */,
+				8FA2D357241D268000AE4299 /* Frameworks */,
+				8FA2D358241D268000AE4299 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MGRS-WatchOS WatchKit Extension";
+			productName = "MGRS-WatchOS WatchKit Extension";
+			productReference = 8FA2D35A241D268000AE4299 /* MGRS-WatchOS WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FA2D341241D267E00AE4299 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "James Taylor";
+				TargetAttributes = {
+					8FA2D346241D267E00AE4299 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					8FA2D34A241D267F00AE4299 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					8FA2D359241D268000AE4299 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 8FA2D344241D267E00AE4299 /* Build configuration list for PBXProject "MGRS-WatchOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FA2D340241D267E00AE4299;
+			productRefGroup = 8FA2D348241D267E00AE4299 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FA2D346241D267E00AE4299 /* MGRS-WatchOS */,
+				8FA2D34A241D267F00AE4299 /* MGRS-WatchOS WatchKit App */,
+				8FA2D359241D268000AE4299 /* MGRS-WatchOS WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FA2D345241D267E00AE4299 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FA2D349241D267F00AE4299 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA2D354241D267F00AE4299 /* Assets.xcassets in Resources */,
+				8FA2D352241D267F00AE4299 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FA2D358241D268000AE4299 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA2D36F241D268000AE4299 /* Preview Assets.xcassets in Resources */,
+				8FA2D36C241D268000AE4299 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FA2D356241D268000AE4299 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA2D362241D268000AE4299 /* HostingController.swift in Sources */,
+				8FA2D360241D268000AE4299 /* ContentView.swift in Sources */,
+				8FA2D366241D268000AE4299 /* NotificationController.swift in Sources */,
+				8FA2D364241D268000AE4299 /* ExtensionDelegate.swift in Sources */,
+				8FA2D368241D268000AE4299 /* NotificationView.swift in Sources */,
+				8FA2D36A241D268000AE4299 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FA2D34E241D267F00AE4299 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FA2D34A241D267F00AE4299 /* MGRS-WatchOS WatchKit App */;
+			targetProxy = 8FA2D34D241D267F00AE4299 /* PBXContainerItemProxy */;
+		};
+		8FA2D35D241D268000AE4299 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FA2D359241D268000AE4299 /* MGRS-WatchOS WatchKit Extension */;
+			targetProxy = 8FA2D35C241D268000AE4299 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8FA2D350241D267F00AE4299 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FA2D351241D267F00AE4299 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8FA2D372241D268000AE4299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8FA2D373241D268000AE4299 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FA2D375241D268000AE4299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MGRS-WatchOS WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 3UNUY4A2PK;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "MGRS-WatchOS WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jamesjmtaylor.MGRS-WatchOS.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		8FA2D376241D268000AE4299 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MGRS-WatchOS WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 3UNUY4A2PK;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "MGRS-WatchOS WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jamesjmtaylor.MGRS-WatchOS.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		8FA2D379241D268000AE4299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3UNUY4A2PK;
+				IBSC_MODULE = MGRS_WatchOS_WatchKit_Extension;
+				INFOPLIST_FILE = "MGRS-WatchOS WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "jamesjmtaylor.MGRS-WatchOS.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		8FA2D37A241D268000AE4299 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3UNUY4A2PK;
+				IBSC_MODULE = MGRS_WatchOS_WatchKit_Extension;
+				INFOPLIST_FILE = "MGRS-WatchOS WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "jamesjmtaylor.MGRS-WatchOS.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		8FA2D37D241D268000AE4299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3UNUY4A2PK;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jamesjmtaylor.MGRS-WatchOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8FA2D37E241D268000AE4299 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3UNUY4A2PK;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jamesjmtaylor.MGRS-WatchOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FA2D344241D267E00AE4299 /* Build configuration list for PBXProject "MGRS-WatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FA2D372241D268000AE4299 /* Debug */,
+				8FA2D373241D268000AE4299 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FA2D374241D268000AE4299 /* Build configuration list for PBXNativeTarget "MGRS-WatchOS WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FA2D375241D268000AE4299 /* Debug */,
+				8FA2D376241D268000AE4299 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FA2D378241D268000AE4299 /* Build configuration list for PBXNativeTarget "MGRS-WatchOS WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FA2D379241D268000AE4299 /* Debug */,
+				8FA2D37A241D268000AE4299 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FA2D37C241D268000AE4299 /* Build configuration list for PBXNativeTarget "MGRS-WatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FA2D37D241D268000AE4299 /* Debug */,
+				8FA2D37E241D268000AE4299 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FA2D341241D267E00AE4299 /* Project object */;
+}
