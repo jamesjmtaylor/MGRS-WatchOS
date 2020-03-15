@@ -7,11 +7,16 @@
 //
 
 import WatchKit
+import CoreLocation
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
+    private var locationManager = CLLocationManager()
+    var LOCATION_CHANGED = NSNotification.Name("location_changed")
 
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
+        locationManager.requestAlwaysAuthorization()
+        initializeUpdates()
     }
 
     func applicationDidBecomeActive() {
@@ -53,4 +58,23 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
         }
     }
 
+}
+
+extension ExtensionDelegate: CLLocationManagerDelegate {
+
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedAlways || status == .authorizedWhenInUse {
+            initializeUpdates()
+        }
+    }
+
+    func initializeUpdates() {
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+        locationManager.startUpdatingLocation()
+    }
+
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        NotificationCenter.default.post(name: LOCATION_CHANGED, object: manager.location)
+    }
 }

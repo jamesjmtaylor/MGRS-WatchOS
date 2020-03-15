@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F7DA900241E74410051A229 /* CoordinatesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7DA8FF241E74410051A229 /* CoordinatesViewModel.swift */; };
+		8F7DA902241E7EDA0051A229 /* WeakRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7DA901241E7EDA0051A229 /* WeakRef.swift */; };
+		8F896B68241E730000C322A9 /* LatLon2UTM.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F896B5D241E730000C322A9 /* LatLon2UTM.m */; };
+		8F896B69241E730000C322A9 /* UTM2LatLon.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F896B5E241E730000C322A9 /* UTM2LatLon.m */; };
+		8F896B6A241E730000C322A9 /* LatLon2MGRS.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F896B64241E730000C322A9 /* LatLon2MGRS.m */; };
+		8F896B6B241E730000C322A9 /* GeoCoordinateConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F896B65241E730000C322A9 /* GeoCoordinateConverter.m */; };
+		8F896B6C241E730000C322A9 /* MGRS2LatLon.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F896B67241E730000C322A9 /* MGRS2LatLon.m */; };
 		8FA2D34C241D267F00AE4299 /* MGRS-WatchOS WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8FA2D34B241D267F00AE4299 /* MGRS-WatchOS WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8FA2D352241D267F00AE4299 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA2D350241D267F00AE4299 /* Interface.storyboard */; };
 		8FA2D354241D267F00AE4299 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FA2D353241D267F00AE4299 /* Assets.xcassets */; };
 		8FA2D35B241D268000AE4299 /* MGRS-WatchOS WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8FA2D35A241D268000AE4299 /* MGRS-WatchOS WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		8FA2D360241D268000AE4299 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA2D35F241D268000AE4299 /* ContentView.swift */; };
+		8FA2D360241D268000AE4299 /* CoordinatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA2D35F241D268000AE4299 /* CoordinatesView.swift */; };
 		8FA2D362241D268000AE4299 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA2D361241D268000AE4299 /* HostingController.swift */; };
 		8FA2D364241D268000AE4299 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA2D363241D268000AE4299 /* ExtensionDelegate.swift */; };
 		8FA2D366241D268000AE4299 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA2D365241D268000AE4299 /* NotificationController.swift */; };
@@ -64,13 +71,27 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8F7DA8FF241E74410051A229 /* CoordinatesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesViewModel.swift; sourceTree = "<group>"; };
+		8F7DA901241E7EDA0051A229 /* WeakRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRef.swift; sourceTree = "<group>"; };
+		8F896B5C241E730000C322A9 /* MGRS-WatchOS WatchKit Extension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MGRS-WatchOS WatchKit Extension-Bridging-Header.h"; sourceTree = "<group>"; };
+		8F896B5D241E730000C322A9 /* LatLon2UTM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LatLon2UTM.m; sourceTree = "<group>"; };
+		8F896B5E241E730000C322A9 /* UTM2LatLon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTM2LatLon.m; sourceTree = "<group>"; };
+		8F896B5F241E730000C322A9 /* GeoCoordinateConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoCoordinateConverter.h; sourceTree = "<group>"; };
+		8F896B60241E730000C322A9 /* GeoCoordinateConverter-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoCoordinateConverter-Prefix.pch"; sourceTree = "<group>"; };
+		8F896B61241E730000C322A9 /* UTM2LatLon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTM2LatLon.h; sourceTree = "<group>"; };
+		8F896B62241E730000C322A9 /* MGRS2LatLon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGRS2LatLon.h; sourceTree = "<group>"; };
+		8F896B63241E730000C322A9 /* LatLon2UTM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatLon2UTM.h; sourceTree = "<group>"; };
+		8F896B64241E730000C322A9 /* LatLon2MGRS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LatLon2MGRS.m; sourceTree = "<group>"; };
+		8F896B65241E730000C322A9 /* GeoCoordinateConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoCoordinateConverter.m; sourceTree = "<group>"; };
+		8F896B66241E730000C322A9 /* LatLon2MGRS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatLon2MGRS.h; sourceTree = "<group>"; };
+		8F896B67241E730000C322A9 /* MGRS2LatLon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGRS2LatLon.m; sourceTree = "<group>"; };
 		8FA2D347241D267E00AE4299 /* MGRS-WatchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MGRS-WatchOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA2D34B241D267F00AE4299 /* MGRS-WatchOS WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MGRS-WatchOS WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA2D351241D267F00AE4299 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		8FA2D353241D267F00AE4299 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FA2D355241D267F00AE4299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FA2D35A241D268000AE4299 /* MGRS-WatchOS WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MGRS-WatchOS WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FA2D35F241D268000AE4299 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8FA2D35F241D268000AE4299 /* CoordinatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesView.swift; sourceTree = "<group>"; };
 		8FA2D361241D268000AE4299 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 		8FA2D363241D268000AE4299 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		8FA2D365241D268000AE4299 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
@@ -93,6 +114,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F896B59241E719300C322A9 /* CoordinatesView */ = {
+			isa = PBXGroup;
+			children = (
+				8FA2D35F241D268000AE4299 /* CoordinatesView.swift */,
+				8F7DA8FF241E74410051A229 /* CoordinatesViewModel.swift */,
+			);
+			path = CoordinatesView;
+			sourceTree = "<group>";
+		};
+		8F896B5A241E71BA00C322A9 /* NotificationsHandler */ = {
+			isa = PBXGroup;
+			children = (
+				8FA2D365241D268000AE4299 /* NotificationController.swift */,
+				8FA2D367241D268000AE4299 /* NotificationView.swift */,
+			);
+			path = NotificationsHandler;
+			sourceTree = "<group>";
+		};
+		8F896B5B241E72C900C322A9 /* CoordinatesHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				8F896B60241E730000C322A9 /* GeoCoordinateConverter-Prefix.pch */,
+				8F896B5F241E730000C322A9 /* GeoCoordinateConverter.h */,
+				8F896B65241E730000C322A9 /* GeoCoordinateConverter.m */,
+				8F896B66241E730000C322A9 /* LatLon2MGRS.h */,
+				8F896B64241E730000C322A9 /* LatLon2MGRS.m */,
+				8F896B63241E730000C322A9 /* LatLon2UTM.h */,
+				8F896B5D241E730000C322A9 /* LatLon2UTM.m */,
+				8F896B62241E730000C322A9 /* MGRS2LatLon.h */,
+				8F896B67241E730000C322A9 /* MGRS2LatLon.m */,
+				8F896B61241E730000C322A9 /* UTM2LatLon.h */,
+				8F896B5E241E730000C322A9 /* UTM2LatLon.m */,
+				8F896B5C241E730000C322A9 /* MGRS-WatchOS WatchKit Extension-Bridging-Header.h */,
+			);
+			path = CoordinatesHelpers;
+			sourceTree = "<group>";
+		};
 		8FA2D340241D267E00AE4299 = {
 			isa = PBXGroup;
 			children = (
@@ -125,16 +183,17 @@
 		8FA2D35E241D268000AE4299 /* MGRS-WatchOS WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				8FA2D35F241D268000AE4299 /* ContentView.swift */,
-				8FA2D361241D268000AE4299 /* HostingController.swift */,
+				8F896B5B241E72C900C322A9 /* CoordinatesHelpers */,
+				8F896B5A241E71BA00C322A9 /* NotificationsHandler */,
+				8F896B59241E719300C322A9 /* CoordinatesView */,
 				8FA2D363241D268000AE4299 /* ExtensionDelegate.swift */,
-				8FA2D365241D268000AE4299 /* NotificationController.swift */,
-				8FA2D367241D268000AE4299 /* NotificationView.swift */,
+				8FA2D361241D268000AE4299 /* HostingController.swift */,
 				8FA2D369241D268000AE4299 /* ComplicationController.swift */,
 				8FA2D36B241D268000AE4299 /* Assets.xcassets */,
 				8FA2D370241D268000AE4299 /* Info.plist */,
 				8FA2D371241D268000AE4299 /* PushNotificationPayload.apns */,
 				8FA2D36D241D268000AE4299 /* Preview Content */,
+				8F7DA901241E7EDA0051A229 /* WeakRef.swift */,
 			);
 			path = "MGRS-WatchOS WatchKit Extension";
 			sourceTree = "<group>";
@@ -219,6 +278,7 @@
 					};
 					8FA2D359241D268000AE4299 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -275,9 +335,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F7DA902241E7EDA0051A229 /* WeakRef.swift in Sources */,
+				8F896B6B241E730000C322A9 /* GeoCoordinateConverter.m in Sources */,
+				8F896B68241E730000C322A9 /* LatLon2UTM.m in Sources */,
+				8F896B6C241E730000C322A9 /* MGRS2LatLon.m in Sources */,
+				8F896B69241E730000C322A9 /* UTM2LatLon.m in Sources */,
+				8F7DA900241E74410051A229 /* CoordinatesViewModel.swift in Sources */,
 				8FA2D362241D268000AE4299 /* HostingController.swift in Sources */,
-				8FA2D360241D268000AE4299 /* ContentView.swift in Sources */,
+				8FA2D360241D268000AE4299 /* CoordinatesView.swift in Sources */,
 				8FA2D366241D268000AE4299 /* NotificationController.swift in Sources */,
+				8F896B6A241E730000C322A9 /* LatLon2MGRS.m in Sources */,
 				8FA2D364241D268000AE4299 /* ExtensionDelegate.swift in Sources */,
 				8FA2D368241D268000AE4299 /* NotificationView.swift in Sources */,
 				8FA2D36A241D268000AE4299 /* ComplicationController.swift in Sources */,
@@ -427,6 +494,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MGRS-WatchOS WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 3UNUY4A2PK;
@@ -441,6 +509,8 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MGRS-WatchOS WatchKit Extension/CoordinatesHelpers/MGRS-WatchOS WatchKit Extension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 6.1;
@@ -451,6 +521,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MGRS-WatchOS WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 3UNUY4A2PK;
@@ -465,6 +536,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MGRS-WatchOS WatchKit Extension/CoordinatesHelpers/MGRS-WatchOS WatchKit Extension-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 6.1;

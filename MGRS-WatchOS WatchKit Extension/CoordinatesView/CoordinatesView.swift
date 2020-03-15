@@ -8,14 +8,21 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct CoordinatesView: View {
+    @ObservedObject var vm: CoordinatesViewModel
+
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            Text(vm.lat)
+            Text(vm.long)
+        }.onAppear {
+            self.vm.listenForLocationChanges()
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        CoordinatesView(vm: CoordinatesViewModel())
     }
 }
