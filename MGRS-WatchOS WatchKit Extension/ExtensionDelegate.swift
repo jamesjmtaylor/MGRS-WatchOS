@@ -70,7 +70,7 @@ extension ExtensionDelegate: CLLocationManagerDelegate {
 
     func initializeUpdates() {
         locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.startUpdatingLocation()
     }
 

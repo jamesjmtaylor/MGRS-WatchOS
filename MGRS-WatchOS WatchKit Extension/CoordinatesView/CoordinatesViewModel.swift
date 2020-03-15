@@ -13,18 +13,57 @@ import CoreLocation
 
 class CoordinatesViewModel: ObservableObject {
     private let appDel = WKExtension.shared().delegate as? ExtensionDelegate
-    @Published var lat = "Lat"
-    @Published var long = "Long"
+    private let dateFormatter = DateFormatter()
+    private var lastLocation : CLLocation? = nil
+    @Published var coordinateString = "Fetching..."
+    @Published var dtgString = "Last update: -"//"Last Update: 2020-03-05 17:32+1000"
+    @Published var accuracyString = "Accuracy: -"
+    @Published var coordinateSystem = CoordinateSystem.MGRS
+
+    func changeCoordinateSystem(){
+        switch coordinateSystem {
+            case .MGRS: coordinateSystem = .LATLONG; updateCoordinateString(lastLocation)
+            case .LATLONG: coordinateSystem = .UTM; updateCoordinateString(lastLocation)
+            case .UTM: coordinateSystem = .MGRS; updateCoordinateString(lastLocation)
+        }
+    }
+
+    func initDateFormatter(){
+        dateFormatter.dateFormat = "y-MM-dd HH:mmZ"
+    }
 
     func listenForLocationChanges() {
         NotificationCenter.default.addObserver(self, selector: #selector(handleNotification(notification:)),
                                                name: appDel?.LOCATION_CHANGED, object: nil)
     }
 
+    fileprivate func updateCoordinateString(_ location: CLLocation?) {
+        guard let location = location else {return}
+        switch coordinateSystem {
+            case .MGRS:
+                coordinateString = GeoCoordinateConverter
+                    .shared()?
+                    .mgrs(fromLatitude: location.coordinate.latitude,
+                          longitude: location.coordinate.longitude)?
+                    .description ?? coordinateString
+            case .UTM:
+                coordinateString = GeoCoordinateConverter
+                    .shared()?
+                    .utm(fromLatitude: location.coordinate.latitude,
+                         longitude: location.coordinate.longitude)?
+                    .description ?? coordinateString
+            case .LATLONG:
+                coordinateString = "\(location.coordinate.latitude.rounded(toPlaces: 5)), \(location.coordinate.longitude.rounded(toPlaces: 5))"
+        }
+    }
+
     @objc private func handleNotification(notification: NSNotification){
-        guard let loc = notification.object as? CLLocation else { return }
-        //lat = loc.coordinate.latitude.description
-        //long = loc.coordinate.longitude.description
-        lat = GeoCoordinateConverter.shared()?.mgrs(fromLatitude: loc.coordinate.latitude, longitude: loc.coordinate.longitude)?.description ?? "MGRS"
+        lastLocation = notification.object as? CLLocation
+        guard let location = lastLocation else { return }
+        dtgString = "Last update:\n \(dateFormatter.string(from: Date()))"
+        accuracyString = "Accuracy: +/- \(Int(location.horizontalAccuracy))m"
+        updateCoordinateString(location)
     }
 }
+
+enum CoordinateSystem: String { case MGRS, UTM, LATLONG }

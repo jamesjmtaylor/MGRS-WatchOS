@@ -13,10 +13,16 @@ struct CoordinatesView: View {
 
     var body: some View {
         VStack {
-            Text(vm.lat)
-            Text(vm.long)
+            Text(vm.coordinateString)
+            Text(vm.dtgString)
+                .fixedSize(horizontal: false, vertical: true)
+            Text(vm.accuracyString)
+            Button(action: vm.changeCoordinateSystem) {
+                Text(vm.coordinateSystem.rawValue)
+            }
         }.onAppear {
             self.vm.listenForLocationChanges()
+            self.vm.initDateFormatter()
         }
     }
 }

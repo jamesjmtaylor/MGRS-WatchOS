@@ -36,30 +36,18 @@
     
     self = [super init];
     if ( self != nil ) {
-        
-//        utm2latlon = [[UTM2LatLon alloc] init];
         latlon2UTM = [[LatLon2UTM alloc] init];
         latlon2MGRS = [[LatLon2MGRS alloc] init];
-//        mgrs2latlon = [[MGRS2LatLon alloc] init];
     }
     
     return self;
 }
 
-//- (void) utm:(NSString*) UTM ToLatitude:(double*) outLatitude Longitude:(double *) outLongitude {
-//    
-//    [utm2latlon convertUTM:UTM ToLatitude:outLatitude Longitude:outLongitude];
-//}
 
 - (NSString *) utmFromLatitude:(double) latitude Longitude:(double) longitude {
     
     return [latlon2UTM convertToUTMFromLatitude:latitude Longitutde:longitude];
 }
-//
-//- (void) mgrs:(NSString*) MGRS ToLatitude:(double*) outLatitude Longitude:(double *) outLongitude {
-//
-//    [mgrs2latlon convertMGRS:MGRS ToLatitude:outLatitude Longitude:outLongitude];
-//}
 
 - (NSString *) mgrsFromLatitude:(double) latitude Longitude:(double) longitude {
     

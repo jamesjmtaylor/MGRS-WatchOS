@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8F7DA900241E74410051A229 /* CoordinatesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7DA8FF241E74410051A229 /* CoordinatesViewModel.swift */; };
 		8F7DA902241E7EDA0051A229 /* WeakRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7DA901241E7EDA0051A229 /* WeakRef.swift */; };
+		8F7DA904241E971F0051A229 /* Double+roundedToPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7DA903241E971F0051A229 /* Double+roundedToPlaces.swift */; };
 		8F896B68241E730000C322A9 /* LatLon2UTM.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F896B5D241E730000C322A9 /* LatLon2UTM.m */; };
 		8F896B6A241E730000C322A9 /* LatLon2MGRS.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F896B64241E730000C322A9 /* LatLon2MGRS.m */; };
 		8F896B6B241E730000C322A9 /* GeoCoordinateConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F896B65241E730000C322A9 /* GeoCoordinateConverter.m */; };
@@ -71,6 +72,7 @@
 /* Begin PBXFileReference section */
 		8F7DA8FF241E74410051A229 /* CoordinatesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesViewModel.swift; sourceTree = "<group>"; };
 		8F7DA901241E7EDA0051A229 /* WeakRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRef.swift; sourceTree = "<group>"; };
+		8F7DA903241E971F0051A229 /* Double+roundedToPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+roundedToPlaces.swift"; sourceTree = "<group>"; };
 		8F896B5C241E730000C322A9 /* MGRS-WatchOS WatchKit Extension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MGRS-WatchOS WatchKit Extension-Bridging-Header.h"; sourceTree = "<group>"; };
 		8F896B5D241E730000C322A9 /* LatLon2UTM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LatLon2UTM.m; sourceTree = "<group>"; };
 		8F896B5F241E730000C322A9 /* GeoCoordinateConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoCoordinateConverter.h; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				8FA2D371241D268000AE4299 /* PushNotificationPayload.apns */,
 				8FA2D36D241D268000AE4299 /* Preview Content */,
 				8F7DA901241E7EDA0051A229 /* WeakRef.swift */,
+				8F7DA903241E971F0051A229 /* Double+roundedToPlaces.swift */,
 			);
 			path = "MGRS-WatchOS WatchKit Extension";
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				8F896B68241E730000C322A9 /* LatLon2UTM.m in Sources */,
 				8F7DA900241E74410051A229 /* CoordinatesViewModel.swift in Sources */,
 				8FA2D362241D268000AE4299 /* HostingController.swift in Sources */,
+				8F7DA904241E971F0051A229 /* Double+roundedToPlaces.swift in Sources */,
 				8FA2D360241D268000AE4299 /* CoordinatesView.swift in Sources */,
 				8FA2D366241D268000AE4299 /* NotificationController.swift in Sources */,
 				8F896B6A241E730000C322A9 /* LatLon2MGRS.m in Sources */,

@@ -15,10 +15,8 @@
 
 
 #import <Foundation/Foundation.h>
-//#import "UTM2LatLon.h"
 #import "LatLon2UTM.h"
 #import "LatLon2MGRS.h"
-//#import "MGRS2LatLon.h"
 
 @interface GeoCoordinateConverter : NSObject {
     
@@ -30,9 +28,8 @@
 
 + (GeoCoordinateConverter *)sharedConverter;
 
-- (void) utm:(NSString*) UTM ToLatitude:(double*) outLatitude Longitude:(double *) outLongitude;
 - (NSString *) utmFromLatitude:(double) latitude Longitude:(double) longitude;
-- (void) mgrs:(NSString*) MGRS ToLatitude:(double*) outLatitude Longitude:(double *) outLongitude;
+
 - (NSString *) mgrsFromLatitude:(double) latitude Longitude:(double) longitude;
 
 @end
