@@ -15,17 +15,17 @@
 
 
 #import <Foundation/Foundation.h>
-#import "UTM2LatLon.h"
+//#import "UTM2LatLon.h"
 #import "LatLon2UTM.h"
 #import "LatLon2MGRS.h"
-#import "MGRS2LatLon.h"
+//#import "MGRS2LatLon.h"
 
 @interface GeoCoordinateConverter : NSObject {
     
-    UTM2LatLon *utm2latlon;
+//    UTM2LatLon *utm2latlon;
     LatLon2UTM *latlon2UTM;
     LatLon2MGRS *latlon2MGRS;
-    MGRS2LatLon *mgrs2latlon;
+//    MGRS2LatLon *mgrs2latlon;
 }
 
 + (GeoCoordinateConverter *)sharedConverter;

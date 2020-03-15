@@ -23,7 +23,8 @@ class CoordinatesViewModel: ObservableObject {
 
     @objc private func handleNotification(notification: NSNotification){
         guard let loc = notification.object as? CLLocation else { return }
-        lat = loc.coordinate.latitude.description
-        long = loc.coordinate.longitude.description
+        //lat = loc.coordinate.latitude.description
+        //long = loc.coordinate.longitude.description
+        lat = GeoCoordinateConverter.shared()?.mgrs(fromLatitude: loc.coordinate.latitude, longitude: loc.coordinate.longitude)?.description ?? "MGRS"
     }
 }
