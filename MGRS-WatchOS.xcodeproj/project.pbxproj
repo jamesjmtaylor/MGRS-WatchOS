@@ -81,7 +81,7 @@
 		8F896B64241E730000C322A9 /* LatLon2MGRS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LatLon2MGRS.m; sourceTree = "<group>"; };
 		8F896B65241E730000C322A9 /* GeoCoordinateConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoCoordinateConverter.m; sourceTree = "<group>"; };
 		8F896B66241E730000C322A9 /* LatLon2MGRS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatLon2MGRS.h; sourceTree = "<group>"; };
-		8FA2D347241D267E00AE4299 /* MGRS-WatchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MGRS-WatchOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FA2D347241D267E00AE4299 /* MGRS WatchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MGRS WatchOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA2D34B241D267F00AE4299 /* MGRS-WatchOS WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MGRS-WatchOS WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA2D351241D267F00AE4299 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		8FA2D353241D267F00AE4299 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 		8FA2D348241D267E00AE4299 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8FA2D347241D267E00AE4299 /* MGRS-WatchOS.app */,
+				8FA2D347241D267E00AE4299 /* MGRS WatchOS.app */,
 				8FA2D34B241D267F00AE4299 /* MGRS-WatchOS WatchKit App.app */,
 				8FA2D35A241D268000AE4299 /* MGRS-WatchOS WatchKit Extension.appex */,
 			);
@@ -216,7 +216,7 @@
 			);
 			name = "MGRS-WatchOS";
 			productName = "MGRS-WatchOS";
-			productReference = 8FA2D347241D267E00AE4299 /* MGRS-WatchOS.app */;
+			productReference = 8FA2D347241D267E00AE4299 /* MGRS WatchOS.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
 		8FA2D34A241D267F00AE4299 /* MGRS-WatchOS WatchKit App */ = {
@@ -423,6 +423,8 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jamesjmtaylor.MGRS-WatchOS.watchkitapp";
+				PRODUCT_NAME = "MGRS WatchOS";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -475,6 +477,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jamesjmtaylor.MGRS-WatchOS.watchkitapp";
+				PRODUCT_NAME = "MGRS WatchOS";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -497,7 +501,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jamesjmtaylor.MGRS-WatchOS.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jamesjmtaylor.MGRS-WatchOS.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -524,7 +528,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jamesjmtaylor.MGRS-WatchOS.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jamesjmtaylor.MGRS-WatchOS.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -544,7 +548,7 @@
 				DEVELOPMENT_TEAM = 3UNUY4A2PK;
 				IBSC_MODULE = MGRS_WatchOS_WatchKit_Extension;
 				INFOPLIST_FILE = "MGRS-WatchOS WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "jamesjmtaylor.MGRS-WatchOS.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jamesjmtaylor.MGRS-WatchOS.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -563,7 +567,7 @@
 				DEVELOPMENT_TEAM = 3UNUY4A2PK;
 				IBSC_MODULE = MGRS_WatchOS_WatchKit_Extension;
 				INFOPLIST_FILE = "MGRS-WatchOS WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "jamesjmtaylor.MGRS-WatchOS.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jamesjmtaylor.MGRS-WatchOS.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -580,8 +584,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3UNUY4A2PK;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "jamesjmtaylor.MGRS-WatchOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jamesjmtaylor.MGRS-WatchOS";
+				PRODUCT_NAME = "MGRS WatchOS";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -593,8 +597,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3UNUY4A2PK;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "jamesjmtaylor.MGRS-WatchOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jamesjmtaylor.MGRS-WatchOS";
+				PRODUCT_NAME = "MGRS WatchOS";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
